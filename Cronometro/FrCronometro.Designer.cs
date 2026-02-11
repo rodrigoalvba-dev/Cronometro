@@ -43,39 +43,42 @@
             // 
             // butIniciar
             // 
-            butIniciar.Location = new Point(224, 257);
+            butIniciar.BackColor = Color.DarkGreen;
+            butIniciar.Location = new Point(70, 175);
             butIniciar.Name = "butIniciar";
             butIniciar.Size = new Size(94, 29);
             butIniciar.TabIndex = 0;
             butIniciar.Text = "INICIAR";
-            butIniciar.UseVisualStyleBackColor = true;
+            butIniciar.UseVisualStyleBackColor = false;
             butIniciar.Click += button1_Click;
             // 
             // butDetener
             // 
-            butDetener.Location = new Point(353, 257);
+            butDetener.BackColor = Color.Red;
+            butDetener.Location = new Point(199, 175);
             butDetener.Name = "butDetener";
             butDetener.Size = new Size(94, 29);
             butDetener.TabIndex = 1;
             butDetener.Text = "DETENER";
-            butDetener.UseVisualStyleBackColor = true;
+            butDetener.UseVisualStyleBackColor = false;
             butDetener.Click += button2_Click;
             // 
             // butReiniciar
             // 
-            butReiniciar.Location = new Point(489, 257);
+            butReiniciar.BackColor = Color.Yellow;
+            butReiniciar.Location = new Point(335, 175);
             butReiniciar.Name = "butReiniciar";
             butReiniciar.Size = new Size(94, 29);
             butReiniciar.TabIndex = 2;
             butReiniciar.Text = "REINICIAR";
-            butReiniciar.UseVisualStyleBackColor = true;
+            butReiniciar.UseVisualStyleBackColor = false;
             butReiniciar.Click += button3_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Symbol", 48F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label1.Location = new Point(163, 98);
+            label1.Location = new Point(9, 16);
             label1.Name = "label1";
             label1.Size = new Size(451, 106);
             label1.TabIndex = 3;
@@ -86,7 +89,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(489, 252);
             Controls.Add(label1);
             Controls.Add(butReiniciar);
             Controls.Add(butDetener);
