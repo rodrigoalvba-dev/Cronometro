@@ -30,9 +30,9 @@
         {
             components = new System.ComponentModel.Container();
             timer1 = new System.Windows.Forms.Timer(components);
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
+            butIniciar = new Button();
+            butDetener = new Button();
+            butReiniciar = new Button();
             label1 = new Label();
             SuspendLayout();
             // 
@@ -41,35 +41,35 @@
             timer1.Interval = 10;
             timer1.Tick += timer1_Tick;
             // 
-            // button1
+            // butIniciar
             // 
-            button1.Location = new Point(224, 257);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 0;
-            button1.Text = "INICIAR";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            butIniciar.Location = new Point(224, 257);
+            butIniciar.Name = "butIniciar";
+            butIniciar.Size = new Size(94, 29);
+            butIniciar.TabIndex = 0;
+            butIniciar.Text = "INICIAR";
+            butIniciar.UseVisualStyleBackColor = true;
+            butIniciar.Click += button1_Click;
             // 
-            // button2
+            // butDetener
             // 
-            button2.Location = new Point(353, 257);
-            button2.Name = "button2";
-            button2.Size = new Size(94, 29);
-            button2.TabIndex = 1;
-            button2.Text = "DETENER";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            butDetener.Location = new Point(353, 257);
+            butDetener.Name = "butDetener";
+            butDetener.Size = new Size(94, 29);
+            butDetener.TabIndex = 1;
+            butDetener.Text = "DETENER";
+            butDetener.UseVisualStyleBackColor = true;
+            butDetener.Click += button2_Click;
             // 
-            // button3
+            // butReiniciar
             // 
-            button3.Location = new Point(489, 257);
-            button3.Name = "button3";
-            button3.Size = new Size(94, 29);
-            button3.TabIndex = 2;
-            button3.Text = "REINICIAR";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
+            butReiniciar.Location = new Point(489, 257);
+            butReiniciar.Name = "butReiniciar";
+            butReiniciar.Size = new Size(94, 29);
+            butReiniciar.TabIndex = 2;
+            butReiniciar.Text = "REINICIAR";
+            butReiniciar.UseVisualStyleBackColor = true;
+            butReiniciar.Click += button3_Click;
             // 
             // label1
             // 
@@ -88,9 +88,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(label1);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(butReiniciar);
+            Controls.Add(butDetener);
+            Controls.Add(butIniciar);
             Name = "FrCronometro";
             Text = "FrCronometro";
             Load += FrCronometro_Load;
@@ -101,9 +101,9 @@
         #endregion
 
         private System.Windows.Forms.Timer timer1;
-        private Button button1;
-        private Button button2;
-        private Button button3;
+        private Button butIniciar;
+        private Button butDetener;
+        private Button butReiniciar;
         private Label label1;
     }
 }
