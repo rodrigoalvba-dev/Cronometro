@@ -77,6 +77,7 @@ int horas = 0;
 
             label1.Text = "00:00:00,00";
 
+            timer1.Start();
         }
     }
 }
