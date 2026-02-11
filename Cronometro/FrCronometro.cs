@@ -55,7 +55,7 @@ int horas = 0;
             
             label1.Text = horas.ToString("00") + ":" +
                              minutos.ToString("00") + ":" +
-                             segundos.ToString("00")+milisegundos.ToString("00");
+                             segundos.ToString("00")+","+milisegundos.ToString("00");
         }
 
         private void label1_Click(object sender, EventArgs e)
